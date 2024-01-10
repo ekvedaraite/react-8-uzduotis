@@ -5,6 +5,7 @@ import { MainButton, MainDiv, MainH1, MainP } from './components/MainDiv'
 import { GiStack } from 'react-icons/gi'
 import { FaPalette, FaFingerprint } from 'react-icons/fa'
 import { FaInfinity } from 'react-icons/fa6'
+import MainDivAnimation from './components/MainDivAnimation'
 
 function App() {
   const cardsData = [
@@ -33,6 +34,7 @@ function App() {
   return (
     <>
     <GlobalStyle/>
+    <MainDivAnimation>
     <Header>
     <HeaderH1>LandingPage</HeaderH1>
     <HeaderDiv>
@@ -43,12 +45,16 @@ function App() {
     </HeaderDiv>
     <HeaderButton>Get Started</HeaderButton>
     </Header>
+    </MainDivAnimation>
 
+
+    <MainDivAnimation>
     <MainDiv>
     <MainH1>React Landing Page Website Template</MainH1>
     <MainP>Made with react and styled components</MainP>
     <MainButton>Get Started</MainButton>
     </MainDiv>
+    </MainDivAnimation>
 
     <CardsDiv>
         {cardsData.map((card, index) => (
